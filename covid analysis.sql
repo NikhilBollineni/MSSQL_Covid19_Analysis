@@ -137,9 +137,6 @@ select (max(cast(total_deaths as int)))
 from dbo.CovidDeaths 
 where location = 'Germany'
 
-
-
-
 -- Daily Global numbers
 Select date, sum(new_cases) as daily_cases, sum(cast(new_deaths as int)) as daily_deaths, (sum(cast(new_deaths as int))/sum(new_cases)*100) as death_percentage
 from portfolio1..CovidDeaths
